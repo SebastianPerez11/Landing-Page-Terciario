@@ -15,7 +15,7 @@ Se desarrollo una landing page dónde se encuentra la información más importan
 - Google Fonts
 
 ### Deploy
-https://landing-page-terciario-qpnjmxncg-sebastian-perezs-projects.vercel.app/
+[https://mision-salta-landing-dev.vercel.app/](https://landing-page-terciario.vercel.app/)
 
 Contacto de Desarrollador
 - Sebastián Perez

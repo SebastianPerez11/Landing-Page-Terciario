@@ -122,7 +122,7 @@ body {
   --blue-50: #f0f6fe;
   --blue-100: #dee9fb;
   --blue-200: #c4daf9;
-  --blue-300: #9cc3f4;
+  --blue-300: #78aded;
   --blue-400: #6da2ed;
   --blue-500: #4b81e6;
   --blue-600: #3664da;
@@ -415,15 +415,15 @@ body {
 }
 
 .title-hero-h1 {
-  font-size: 6.5rem;
-  line-height: 6.5rem;
+  font-size: 6.4rem;
+  line-height: 6.2rem;
   font-weight: 500;
   text-align: left;
   color: var(--blue-900);
 }
 
 .p-hero {
-  font-size: 2.78rem;
+  font-size: 2.6rem;
   font-weight: 200;
   text-align: left;
   color: #fff;
@@ -431,7 +431,7 @@ body {
 }
 
 .span-hero {
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 500;
   text-align: left;
   color: #fff;
@@ -443,7 +443,8 @@ body {
 .container-hero-links{
   display: flex;
   width: 100%;
- justify-content: space-between;
+  justify-content: start;
+  gap: 26rem;
 }
 
 .container-net {
@@ -452,8 +453,8 @@ body {
 }
 
 .container-net-link {
-  width: 3.3rem;
-  height: 3.3rem;
+  width: 3.4rem;
+  height: 3.4rem;
 }
 
 .container-net-link-icon {
@@ -477,7 +478,7 @@ body {
 .btn-ca {
   text-align: center;
   border: 0.25rem var(--yellow-600) solid;
-  padding: 1.4rem 3.4rem;
+  padding: 1.2rem 5rem;
   font-weight: 500;
   font-size: 2.2rem;
   border-radius: 10rem;
@@ -503,12 +504,13 @@ body {
 .container-hero-il {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .container-hero-il-img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
   animation: float 3s infinite linear;
   -webkit-animation: float 2.8s infinite linear;
   filter: drop-shadow(0px 50px 100px #12246a75);
@@ -812,7 +814,7 @@ body {
   -moz-border-radius: 1rem;
   -ms-border-radius: 1rem;
   -o-border-radius: 1rem;
-  padding: 3.5rem;
+  padding: 3rem;
   gap: .5rem;
   display: flex;
   flex-direction: column;
@@ -838,8 +840,8 @@ body {
 }
 
 .container-call-il-img{
-  width: 50rem;
-  height: 50rem;
+  width: 48rem;
+  height: 48rem;
 }
 
 @media (max-width: 1280px) {
@@ -912,14 +914,13 @@ body {
 }
 
 /* Section Circles */
-/* Hacer Slider Infinito */
 
 .section-circle {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 14.4rem 5.5rem;
+  padding: 8.4rem 5.5rem;
 }
 
 .container-circles{
@@ -947,7 +948,6 @@ body {
   -o-border-radius: 50%;
   display: grid;
   place-content: center;
-  position: relative;
 }
 
 .call-circle span {
@@ -955,35 +955,6 @@ body {
   font-weight: 600;
   color: var(--blue-800);
   text-align: center;
-}
-
-.call-circle::after{
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  z-index: -2;
-  background-color: var(--blue-800);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  animation: pulse 2s ease-in-out infinite;
-  -webkit-animation: pulse 2.5s linear infinite;
-}
-
-@keyframes pulse {
-  0%{
-    opacity: 0;
-  }
-  50%{
-    scale: 1.06;
-    opacity: .08;
-  }
-  100%{
-    opacity: .08;
-  }
 }
 
 @media (max-width: 910px) {
@@ -1172,7 +1143,7 @@ body {
 
 .news-new-figure {
   width: 100%;
-  height: 60%;
+  height: 55%;
 }
 
 .news-new-image {
@@ -1218,7 +1189,8 @@ body {
 .news-new-footer-time,
 .news-new-footer-tag {
   font-size: 1.8rem;
-  background-color: var(--blue-400);
+  line-height: 1.8rem;
+  background-color: var(--blue-300);
   border-radius: 1.5rem;
   -webkit-border-radius: 1.5rem;
   -moz-border-radius: 1.5rem;
@@ -1231,8 +1203,8 @@ body {
 }
 
 .news-new-footer-contain-icon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.8rem;
+  height: 2.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1273,8 +1245,8 @@ body {
 
 .footer-container {
   max-width: 144rem;
+  width: 100%;
   display: flex;
-  gap: 8rem;
   justify-content: space-between;
 }
 
@@ -1282,7 +1254,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 100%;
   align-self: center;
 }
@@ -1294,7 +1265,6 @@ body {
 
 .footer-section {
   display: flex;
-  width: 100%;
   height: 100%;
   justify-content: center;
   flex-direction: column;
@@ -1309,7 +1279,8 @@ body {
 }
 
 .footer-text {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  width: 35ch;
   color: var(--white-bg);
   font-weight: 400;
 }
